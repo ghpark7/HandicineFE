@@ -20,7 +20,7 @@ function QAExpertBoard() {
         ))}
       </ListGroup>
       <Card.Footer>
-        <Button variant="primary">Ask a Question</Button>
+        <Button variant="primary">글 작성하기</Button>
       </Card.Footer>
     </Card>
   );
