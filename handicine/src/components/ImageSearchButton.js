@@ -21,9 +21,10 @@ function ImageSearchButton() {
       />
       <Button
         variant="primary"
+        style={{ minWidth: '120px', textAlign: 'center' }}
         onClick={() => document.getElementById('upload').click()}
       >
-        Search by Image
+        이미지로 검색
       </Button>
     </>
   );
