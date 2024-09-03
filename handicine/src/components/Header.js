@@ -5,7 +5,12 @@ function Header() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" style={{ padding: '20px 10px' }}>
       <Container>
-        <Navbar.Brand href="#home">Handicine</Navbar.Brand>
+        <Navbar.Brand
+          href="#home"
+          style={{ fontWeight: 'bold', fontSize: '1.8rem' }}
+        >
+          Handicine
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

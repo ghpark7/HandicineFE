@@ -15,7 +15,9 @@ function FreeBoard() {
 
   return (
     <Card>
-      <Card.Header as="h5">Free Board</Card.Header>
+      <Card.Header as="h5" style={{ cursor: 'pointer' }} onClick={() => navigate('/free-board')}>
+        Free Board
+      </Card.Header>
       <ListGroup variant="flush">
         {recentPosts.map((post) => (
           <ListGroup.Item key={post.id}>
@@ -25,8 +27,8 @@ function FreeBoard() {
         ))}
       </ListGroup>
       <Card.Footer className="text-center">
-        <Button variant="link" onClick={() => navigate('/free-board')}>
-          +더보기
+        <Button variant="primary" onClick={() => navigate('/free-board')}>
+          + 더보기
         </Button>
       </Card.Footer>
     </Card>
