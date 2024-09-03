@@ -6,11 +6,13 @@ function SearchBar() {
     <Form className="d-flex">
       <FormControl
         type="search"
-        placeholder="Search for medicine"
+        placeholder="약품 이름을 입력하세요"
         className="me-2"
         aria-label="Search"
       />
-      <Button variant="outline-success">Search</Button>
+      <Button variant="outline-success" style={{ minWidth: '80px', textAlign: 'center' }}>
+        검색
+      </Button>
     </Form>
   );
 }
