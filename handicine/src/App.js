@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import Header from './components/Header';
 import MainPage from './components/MainPage';
@@ -12,11 +12,11 @@ function App() {
     <Router>
       <Header />
       <Container>
-        <Switch>
-          <Route exact path="/" component={MainPage} />
-          <Route path="/qa-board" component={QAExpertBoardPage} />
-          <Route path="/free-board" component={FreeBoardPage} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/qa-board" element={<QAExpertBoardPage />} />
+          <Route path="/free-board" element={<FreeBoardPage />} />
+        </Routes>
       </Container>
       <Footer />
     </Router>
