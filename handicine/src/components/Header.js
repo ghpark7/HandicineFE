@@ -14,8 +14,8 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Button variant="light" className="me-2">로그인</Button>
-            <Button variant="light">회원가입</Button>
+            <Button variant="light" className="me-2" style={{ fontWeight: 'bold' }}>로그인</Button>
+            <Button variant="light" style={{ fontWeight: 'bold' }}>회원가입</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

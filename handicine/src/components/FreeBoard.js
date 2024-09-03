@@ -16,7 +16,7 @@ function FreeBoard() {
   return (
     <Card>
       <Card.Header as="h5" style={{ cursor: 'pointer' }} onClick={() => navigate('/free-board')}>
-        Free Board
+        복약 경험 공유 게시판
       </Card.Header>
       <ListGroup variant="flush">
         {recentPosts.map((post) => (
