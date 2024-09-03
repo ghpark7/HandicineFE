@@ -15,7 +15,9 @@ function QAExpertBoard() {
 
   return (
     <Card>
-      <Card.Header as="h5">Q&A Board</Card.Header>
+      <Card.Header as="h5" style={{ cursor: 'pointer' }} onClick={() => navigate('/qa-board')}>
+        Q&A Board
+      </Card.Header>
       <ListGroup variant="flush">
         {recentQuestions.map((item) => (
           <ListGroup.Item key={item.id}>
@@ -25,8 +27,8 @@ function QAExpertBoard() {
         ))}
       </ListGroup>
       <Card.Footer className="text-center">
-        <Button variant="link" onClick={() => navigate('/qa-board')}>
-          +더보기
+        <Button variant="primary" onClick={() => navigate('/qa-board')}>
+          + 더보기
         </Button>
       </Card.Footer>
     </Card>
