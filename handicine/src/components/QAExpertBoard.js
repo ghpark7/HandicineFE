@@ -16,7 +16,7 @@ function QAExpertBoard() {
   return (
     <Card>
       <Card.Header as="h5" style={{ cursor: 'pointer' }} onClick={() => navigate('/qa-board')}>
-        Q&A Board
+        전문가 Q&A
       </Card.Header>
       <ListGroup variant="flush">
         {recentQuestions.map((item) => (
